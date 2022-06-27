@@ -1,21 +1,28 @@
-# InfoGet
+# vTest
 
-InfoGet is a Linux tool for gathering information about a website .
+vTest is a Linux tool for testing different network attacks, we used Docker and Python to build it 
 
-## Modules Installation  
+## Modules Installation 
 
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install modules if you need to install.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) and requirements.txt file to install python modules.
 
 ```bash
-sudo pip3 install <Module_Name>
+pip install -r requirements.txt 
 ```
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install InfoGet .
+Before the instalation of witchattack tool, you must install dockerfile images, so run this python script  ' Install_Docker_file.py ' in main folder :
 
-- Go to  Infoget Folder and run ( . is in the command )
+- Go to vTest Folder and run 
+
+```bash
+sudo Python3 Install_Docker_file.py
+```
+
+now, you can Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Wtichattack .
+
+- Go to vTest Folder and run ( . is in the command )
 
 ```bash
 sudo pip3 install -e .
@@ -24,15 +31,21 @@ sudo pip3 install -e .
 ## Usage
 
 ```bash
-infoget -g URL/IP
+vTest --name <ATTACK_NAME>
+```
+
+OR Just type vTest and will get a list of available attacks :
+
+```bash
+vTest 
 ```
 
 For more info :
 ```bash
-infoget --help
+vTest --help
 ```
 ## Uninstall 
 
 ```bash
-sudo pip3 uninstall infoget
+sudo pip3 uninstall vTest
 ```
